@@ -8,19 +8,22 @@
 </head>
 
 <body>
-    
-    <div>
-        <h1></h1>
-        <form>
-            <label></label>
-            <input>
+
+    <div class="form-container">
+        <h1>Animated Button Form</h1>
+        <form id="btn-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
             <br><br>
-            <label></label>
-            <input>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
             <br><br>
-            <div>
-                <button>
-                    <div></div>
+            <div class="btn-container">
+                <button id="loadbtn" class="btn">
+                    Submit
+                    <div class="loader" id="loader">
+
+                    </div>
                 </button>
             </div>
         </form>
